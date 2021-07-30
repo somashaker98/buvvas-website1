@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+    
+  /* Style the top navigation bar */
+  .topnav {
+    overflow:hidden;
+    background-color: #c5d9ed;
+  }
+
+  /* navbar logo */
+
+  .logo {
+      display: inline-block;
+  }
+  .nav_logo {
+      padding-left: 4rem; 
+  }
+  
+  .nav_links {
+      display: inline-block;
+      float: right;
+      text-align: center;
+      padding-top: 1px;
+      padding-right: 15rem;
+  }
+
+  .sign_in   {
+    position: absolute;
+    float: right;
+    display: inline;
+  }
+  /* Style the topnav links */
+  .topnav a {
+    float: right;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #043959;
+    color:#fff;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column_1 {
+    background-color: #135e96;
+    float: left;
+    width: 33.33%;
+    height: 40rem;
+    padding: 15px;
+  }
+  .column_2 {
+    background-color: #0a4b78;
+    float: left;
+    width: 33.33%;
+    height: 40rem;
+    padding: 15px;
+  }
+  .column_3 {
+    background-color: #043959;
+    float: left;
+    width: 33.33%;
+    height: 40rem;
+    padding: 15px;
+  }
+ 
+.web_dev {
+color: #fff;
+}
+.mobile_app {
+    color: #fff;
+}
+.digital {
+    color: #fff;
+}
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+ 
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:900px) {
+    .column_1 {
+      width: 100%;
+      height: 20rem;
+    }
+  }
+
+  @media screen and (max-width:900px) {
+    .column_2 {
+      width: 100%;
+      height: 20rem;
+    }
+  }
+
+  @media screen and (max-width:900px) {
+    .column_3 {
+      width: 100%;
+      height: 20rem;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+      .nav_logo {
+        padding: 0.1rem 1rem;
+      }
+  }
+
+
+/* Slides */
+
+#slideset1 {height: 40em; position: relative;
+    overflow: hidden}
+
+#slideset1 > * {position: absolute; top: 100%; left: 0;
+        animation: 12s autoplay2 infinite ease-in-out}
+
+
+@keyframes autoplay2 {
+    0% {top: 100%}
+    4% {top: 0%}
+    33.33% {top: 0%}
+    37.33% {top: -100%}
+    100% {top: -100%}
+}
+
+#slideset1 > *:nth-child(1) {animation-delay: 0s}
+#slideset1 > *:nth-child(2) {animation-delay: 4s}
+#slideset1 > *:nth-child(3) {animation-delay: 8s}
+/* #slideset1 > *:nth-child(4) {animation-delay: 12s}
+#slideset1 > *:nth-child(5) {animation-delay: 16s}
+#slideset1 > *:nth-child(6) {animation-delay: 20s} */
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>      
+ Footer Area-1-L1
+        <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+        footer {
+            width: 100%;
+            height: 25rem;
+            background-color: #01263a;
+        }
+      
+        .footer-area {
+            padding-top: 15px;
+            padding-bottom: 30px;
+          }
+          
+          @media (min-width: 768px) {
+            .footer-area {
+              padding-top: 68px;
+              padding-bottom: 50px;
+            }
+          }
+          
+          @media (min-width: 992px) {
+            .footer-area {
+              padding-top: 40px;
+              padding-bottom: 90px;
+            }
+          }
+          
+          .footer-l1-area-items h3 {
+            font-size: 15px;
+            line-height: 28px;
+            color: #fff;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            margin-bottom: 25px;
+          }
+          
+          .footer-l1-area-items ul li a {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 40px;
+            color: #fff;
+            text-decoration: none;
+          }
+          
+          .subscribe-newsletter {
+            padding: 22px 30px 10px 30px;
+            border-radius: 25px;
+            margin-top: 35px;
+            margin-bottom: 35px;
+          }
+          
+          @media (min-width: 768px) {
+            .subscribe-newsletter {
+              margin-bottom: 45px;
+            }
+          }
+          
+          @media (min-width: 992px) {
+            .subscribe-newsletter {
+              margin-bottom: 0;
+            }
+          }
+          
+          .subscribe-newsletter h4 {
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 30px;
+            color: #213053;
+            margin-bottom: 18px;
+          }
+          
+          .subscribe-newsletter .form-control {
+            font-size: 15px;
+            font-weight: 400;
+            color: #213053;
+            font-style: normal;
+            line-height: 28px;
+            border: 0;
+            height: 60px;
+            border-radius: 15px;
+            background-color: #fff;
+            padding: 0px 18px 0px 18px;
+          }
+          
+          @media (min-width: 576px) {
+            .subscribe-newsletter .form-control {
+              padding: 0px 150px 0px 18px;
+            }
+          }
+          
+          .subscribe-newsletter .form-control::-moz-placeholder {
+            color: #213053;
+            opacity: 0.8;
+          }
+          
+          .subscribe-newsletter .form-control:-ms-input-placeholder {
+            color: #213053;
+            opacity: 0.8;
+          }
+          
+          .subscribe-newsletter .form-control::placeholder {
+            color: #213053;
+            opacity: 0.8;
+          }
+          
+          .subscribe-newsletter .btn {
+            color: #fff;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 26px;
+            width: 104px;
+            height: 50px;
+            border-radius: 15px;
+            background-color: #FF7139;
+            margin-left: 0px;
+            margin-top: 9px;
+          }
+          
+          @media (min-width: 576px) {
+            .subscribe-newsletter .btn {
+              height: 43px;
+              margin-left: -140px;
+            }
+          }
+          
+          .subscribe-newsletter p {
+            font-size: 15px;
+            line-height: 28px;
+            color: #213053;
+            opacity: 0.7;
+            margin-top: 12px;
+          }
+          
